@@ -14,6 +14,14 @@ public class Item {
         this.quality = quality;
     }
 
+    public boolean is(String name) {
+        return this.name.equals(name);
+    }
+
+    public boolean isNot(String name) {
+        return !is(name);
+    }
+
    @Override
    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;
